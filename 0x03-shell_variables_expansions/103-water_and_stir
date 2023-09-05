@@ -1,3 +1,2 @@
 #!/bin/bash
-sum=0; for i in $(echo $WATER | grep -o .); do sum=$((sum + $(echo "ewwatratewa" | grep -o . | grep -n $i | cut -d: -f1))); done; for i in $(echo $STIR | grep -o .); do sum=$((sum + $(echo "ti.itirtrtr" | grep -o . | grep -n $i | cut -d: -f1))); done; echo $sum | rev
-
+echo $(printf %o $(($((5#$(echo $WATER | tr 'water' '01234'))) + $((5#$(echo $STIR | tr 'stir.' '01234'))))) | tr '01234567' 'bestchol')
